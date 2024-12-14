@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    width: 600px;
+    height: 510px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+.title {
+    font-size: 30px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+}
+
+textarea {
+    margin: 0 20px;
+    height: 350px;
+    font-size: 25px;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.211);
+    border-radius: 20px;
+}
+
+textarea::placeholder {
+    font-size: 25px;
+    color: black;
+}
+
+.click button {
+    width: 560px;
+    height: 50px;
+    margin: 20px 20px;
+
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #79F1A4, #0E5CAD);
+    color: white;
+}
+
+.click :active {
+    transform: scale(0.9);
+}
+
+.click button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.click:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.click {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .content {
+        width: 400px;
+    }
+
+    .click button {
+        width: auto;
+    }
+
+    .click {
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    textarea::placeholder {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        width: 350px;
+    }
+
+    .click button {
+        width: auto;
+    }
+
+    .click {
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    textarea::placeholder {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .content {
+        width: 320px;
+        height: auto;
+    }
+
+    .click button {
+        width: auto;
+    }
+
+    .click {
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    textarea::placeholder {
+        font-size: 17px;
+    }
+}
